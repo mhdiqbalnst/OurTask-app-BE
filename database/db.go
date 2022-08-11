@@ -30,6 +30,8 @@ func connectDB() *gorm.DB {
 
 	var err error
 
+	// config database
+
 	dsn := DB_USERNAME + ":" + DB_PASSWORD + "@tcp" + "(" + DB_HOST + ":" + DB_PORT + ")/" + DB_NAME + "?" + "parseTime=true&sslmode=require"
 	fmt.Println("dsn : ", dsn)
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
