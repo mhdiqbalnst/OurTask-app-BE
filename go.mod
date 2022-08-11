@@ -1,4 +1,4 @@
-// +heroku goVersion go1.19
+// +heroku goVersion go1.17
 module ourtask
 
 go 1.19
