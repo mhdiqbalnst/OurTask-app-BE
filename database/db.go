@@ -16,6 +16,8 @@ func InitDb() *gorm.DB {
 	return Db
 }
 
+// database postgres
+
 func connectDB() *gorm.DB {
 	// errEnv := godotenv.Load()
 	// if errEnv != nil {
