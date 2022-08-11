@@ -12,6 +12,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// task repository structs
 type TaskRepo struct {
 	Db *gorm.DB
 }
@@ -86,6 +87,7 @@ func (repository *TaskRepo) UpdateTask(c *gin.Context) {
 }
 
 // delete task
+
 func (repository *TaskRepo) DeleteTask(c *gin.Context) {
 	var task models.Task
 	id, _ := strconv.Atoi(c.Param("id"))
