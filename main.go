@@ -10,7 +10,7 @@ import (
 
 func main() {
 	r := setupRouter()
-	_ = r.Run(":5000")
+	_ = r.Run()
 }
 
 func setupRouter() *gin.Engine {
